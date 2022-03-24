@@ -4133,7 +4133,7 @@ em.state-invalid {
 	font-size: 1.5rem;
 	line-height: 1.2;
 	text-transform: capitalize;
-	letter-spacing: .2rem;
+	letter-spacing: -1px;
 }
 
 .visual-bottom-block {
@@ -5189,7 +5189,8 @@ pre {
 /******* block heading styles *******/
 
 .block-main-heading {
-	color: #c08736;
+	color: #2F343F;
+	letter-spacing: -2px;
 }
 
 .block-sub-heading {
@@ -5199,7 +5200,6 @@ pre {
 	margin-bottom: .625rem;
 	letter-spacing: .0625rem;
 	line-height: 1.875rem;
-	font-style: italic;
 	color: #c08736;
 }
 
@@ -5225,6 +5225,8 @@ pre {
 
 .block-heading h3 {
 	font-weight: 300;
+	letter-spacing: -2px;
+	color: #2F343F;
 }
 
 .block-heading .content-title {
@@ -6559,13 +6561,13 @@ input:focus:-ms-input-placeholder,textarea:focus:-ms-input-placeholder {
 
 .waituk_newsletter-form input[type='email'] {
 	background: none;
-	color: #55565b;
-	border-color: #55565b;
+	color: rgba(250, 250, 250, .1);
+	border: 1px solid #fff;
 	letter-spacing: 0rem;
 }
 
 .waituk_newsletter-form ::-webkit-input-placeholder {
-	color: #55565b;
+	color: rgba(250, 250, 250, .05);
 }
 
 .waituk_newsletter-form :-moz-placeholder {
@@ -6769,7 +6771,7 @@ input:focus:-ms-input-placeholder,textarea:focus:-ms-input-placeholder {
 }
 
 .social-network a {
-	color: #55565b;
+	color: #fff;
 }
 
 .social-network a:hover {
@@ -6981,7 +6983,8 @@ a.full-width-icon:hover .social-text {
 }
 
 .visual-no-bg .breadcrumb .breadcrumb-item.active {
-	color: #55565b;
+	color: #fff;
+	letter-spacing: 0;
 }
 
 .visual-no-bg .breadcrumb .breadcrumb-item + .breadcrumb-item:before {
@@ -6989,7 +6992,9 @@ a.full-width-icon:hover .social-text {
 }
 
 .visual-no-bg .breadcrumb .breadcrumb-item a {
-	color: #55565b;
+	color: #fff;
+	opacity: 0.5;
+	letter-spacing: 0;
 }
 
 .visual-no-bg .breadcrumb .breadcrumb-item a:hover {
@@ -9902,7 +9907,7 @@ a.full-width-icon:hover .social-text {
 
 .footer .footer-main {
 	/*background: $footer-bg-image;*/
-	background-color: #c4a982;
+	background-color: #2F343F;
 	position: relative;
 	color: #fff;
 	z-index: 2;
@@ -10875,6 +10880,8 @@ a.full-width-icon:hover .social-text {
 
 	.waituk_newsletter-form .btn.btn-trans-dark-gray {
 		padding: .8rem 1.071rem .7rem;
+		color: #c4a982;
+		border: 1px solid #fff;
 	}
 
 	.waituk_newsletter-form .btn.btn-trans-dark-gray:hover {
@@ -11448,8 +11455,9 @@ a.full-width-icon:hover .social-text {
 	}
 
 	.visual-no-bg .visual-inner {
-		padding-top: 5.625rem;
-		padding-bottom: 2.8125rem;
+		padding-top: 15rem;
+		padding-bottom: 14rem;
+		background-color: #2F343F;
 	}
 
 	.btn {
@@ -11864,7 +11872,9 @@ a.full-width-icon:hover .social-text {
 	}
 
 	.visual-no-bg .visual-title {
-		font-size: 3rem;
+		font-size: 5rem;
+		color: #c4a982;
+		letter-spacing: -1px;
 	}
 
 	.visual-bottom-block h4 {
@@ -11904,7 +11914,9 @@ a.full-width-icon:hover .social-text {
 	}
 
 	.block-sub-heading {
-		font-size: 1.125rem;
+		font-size: 1.2rem;
+		color: #2F343F;
+		letter-spacing: -1px;
 	}
 
 	.block-sub-heading big {
@@ -11981,6 +11993,7 @@ a.full-width-icon:hover .social-text {
 
 	.footer .footer-main .icon {
 		font-size: 3rem;
+		color: #c4a982;
 	}
 }
 
@@ -13112,4 +13125,60 @@ a.full-width-icon:hover .social-text {
 		padding-bottom: 200%;
 		opacity: 0;
 	}
+}
+
+
+/*new section styles*/
+
+.new-section{
+	width: 	1141px;
+	padding: 0 15px;
+	margin: 0 auto 130px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.new-section .featured{
+	width: 50%;
+	height: 300px;
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+	position: relative;
+	z-index: 2;
+	background-color: #c4a982;
+}
+
+.new-section .featured .bg-img-section{
+	
+}
+
+.new-section .featured-2{
+	
+	background-color: #7e2705;
+}
+
+.new-section .featured .content-txt{
+	padding: 40px 100px 40px 40px;
+}
+
+.new-section .featured .content-txt .ttl{
+	color: #fff;
+	font-size: 18px;
+	margin-bottom: 40px;
+	letter-spacing: -1px;
+	font-weight: 300;
+}
+
+.new-section .featured .content-txt .btn-new-style{
+	padding: 10px 30px;
+	border: 1px solid #fff;
+	color: #fff;
+}
+
+.new-section .featured .content-txt .btn-new-style:hover{
+	background-color: #fff;
+	color: #c4a982;
+	transition: 300ms;
 }
